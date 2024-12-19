@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 85vh;
+    min-height: 100vh;
     color: #fff;
 }
 
@@ -87,9 +87,8 @@ button:hover {
 /* Table */
 #result-container {
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
+
 
 #imc-number {
     font-size: 2.4rem;
@@ -106,26 +105,35 @@ button:hover {
     color: #dfdfdf;
 }
 
+#result-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #imc-table {
     margin: 1.5rem 0;
     font-size: 0.8rem;
 }
 
-#table-header {
+
+.table-header {
     font-weight: bold;
     color: #ccc;
 }
 
-#table-header, #table-data {
+.table-header, 
+.table-data {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #444;
+    text-align: center;
 }
 
-#table-header h4, #table-data p {
-    flex: 1;
+.table-header h4, 
+.table-data p {
+flex: 1;
 }
 
 #table-header h4:nth-child(3),
